@@ -1,0 +1,11 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {validarCatalogo,horarioParticipante,sesionesAsignacion} from '../src/modelo.js';
+const d=JSON.parse(readFileSync(new URL('../datos/catalogo.json',import.meta.url),'utf8'));
+assert.deepEqual(validarCatalogo(d),[]);
+assert.equal(d.secciones.length,12);
+assert.equal(horarioParticipante(d,'DEMO-001').length,2);
+assert.equal(horarioParticipante(d,'DEMO-002').length,1);
+assert.equal(horarioParticipante(d,'DEMO-003').length,1);
+assert.equal(sesionesAsignacion(d,'ASG-01')[0].recurso.id,'AQR-DEMO-01');
+console.log('Pruebas de catálogo y recorridos: OK');

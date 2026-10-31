@@ -1,0 +1,15 @@
+{
+  "centro": {"codigo":"14545","nombre":"CANASTICA","regional":{"codigo":"04","nombre":"SAN CRISTOBAL"},"distrito":{"codigo":"0403","nombre":"SAN CRISTOBAL SUR"},"sector":"PUBLICO","servicio":"Educacion Secundaria de Jovenes y Adultos","tanda":"SABATINA"},
+  "anioEscolar":"2026-2027",
+  "grados":[1,2,3,4,5],
+  "secciones":["1A","1B","2A","2B","3A","3B","4A","4B","4C","5A","5B","5C"],
+  "participantes":[{"id":"DEMO-001","nombre":"Participante de demostración A","seccionId":"5A"},{"id":"DEMO-002","nombre":"Participante de demostración B","seccionId":"4B"},{"id":"DEMO-003","nombre":"Participante de demostración C","seccionId":"1A"}],
+  "asignaturas":[{"id":"MAT","nombre":"Matemática"},{"id":"LEN","nombre":"Lengua Española"},{"id":"SOC","nombre":"Ciencias Sociales"}],
+  "docentes":[{"id":"DOC-DEMO-01","nombre":"Docente de demostración 01"},{"id":"DOC-DEMO-02","nombre":"Docente de demostración 02"},{"id":"DOC-DEMO-03","nombre":"Docente de demostración 03"}],
+  "asignaciones":[{"id":"ASG-01","seccionId":"5A","asignaturaId":"MAT","docenteId":"DOC-DEMO-01"},{"id":"ASG-02","seccionId":"5A","asignaturaId":"LEN","docenteId":"DOC-DEMO-02"},{"id":"ASG-03","seccionId":"4B","asignaturaId":"SOC","docenteId":"DOC-DEMO-03"},{"id":"ASG-04","seccionId":"1A","asignaturaId":"MAT","docenteId":"DOC-DEMO-01"}],
+  "bloques":[{"id":"B1","dia":"Sábado","inicio":"08:00","fin":"09:15"},{"id":"B2","dia":"Sábado","inicio":"09:15","fin":"10:30"},{"id":"B3","dia":"Sábado","inicio":"11:00","fin":"12:15"},{"id":"B4","dia":"Sábado","inicio":"13:15","fin":"14:30"},{"id":"B5","dia":"Sábado","inicio":"14:30","fin":"16:00"}],
+  "horarios":[{"asignacionId":"ASG-01","bloqueId":"B1"},{"asignacionId":"ASG-02","bloqueId":"B2"},{"asignacionId":"ASG-03","bloqueId":"B3"},{"asignacionId":"ASG-04","bloqueId":"B2"}],
+  "recursos":[{"id":"AQR-DEMO-01","titulo":"Contraseñas seguras (demostración técnica)","url":"https://ezequiel-cdo.github.io/aula-qr/","nota":"Recurso piloto transversal; no se presenta como contenido curricular validado de Matemática."}],
+  "sesiones":[{"id":"SES-01","asignacionId":"ASG-01","titulo":"Exploración de AulaQR (actividad técnica piloto)","recursoId":"AQR-DEMO-01"}],
+  "metadatos":{"origen":"Estructura institucional facilitada por el centro; alumnos, docentes, asignaciones y horarios del prototipo son ficticios.","horariosReferencia":"2025-2026 (no vigentes ni reutilizados como asignaciones 2026-2027)","aviso":"Prototipo público SIN DATOS PERSONALES NI CONTROL DE ACCESO REAL"}
+}
